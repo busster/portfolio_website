@@ -13,42 +13,65 @@ html, body {
 	height: 100%;
 	width: 100%;
 	background-color: black;
+	overflow: hidden;
 }
 
 .project-display {
-	-webkit-transition: all .4s ease-in-out;
-	-moz-transition: all .4s ease-in-out;
-	-o-transition: all .4s ease-in-out;
-	-ms-transition: all .4s ease-in-out;
+	-webkit-transition: all .1s ease-in;
+	-moz-transition: all .1s ease-in;
+	-o-transition: all .1s ease-in;
+	-ms-transition: all .1s ease-in;
 }
-.transition {
-	-webkit-transform: scale(1,1.1); 
-    -moz-transform: scale(1,1.1);
-    -o-transform: scale(1,1.1);
-    transform: scale(1,1.1);
+.translate {
+	transform-style: flat;
+	transform: perspective(1000px) translate3d(0px,0px,10px);
 }
-
 .project {
-	-webkit-transition: all .4s ease-in-out;
-	-moz-transition: all .4s ease-in-out;
-	-o-transition: all .4s ease-in-out;
-	-ms-transition: all .4s ease-in-out;
+	-webkit-transition: all .1s ease-in;
+	-moz-transition: all .1s ease-in;
+	-o-transition: all .1s ease-in;
+	-ms-transition: all .1s ease-in;
 }
-.inverse-transition {
-	-webkit-transform: scale(1,.90909091); 
-    -moz-transform: scale(1,.90909091);
-    -o-transform: scale(1,.90909091);
-    transform: scale(1,.90909091);
+.translate-inverse {
+	transform-style: flat;
+	transform: perspective(1000px) translate3d(0px,0px,-10px);
 }
 
 .project-display {
 	position: relative;
-	height: 32.77777778%;
+	height: 33.33333333%;
 	min-height: 300px;
 	width: 100%;
 	opacity: .5;
 	z-index: 0;
 	overflow: hidden;
+}
+
+.project {
+	position: absolute;
+	height: 100%;
+}
+.project img {
+	z-index: 0;
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+	width: 100%;
+	margin: 0, auto;
+}
+
+.button {
+	transform: perspective(500px) scale(.25);
+	font-size: 1.5em;
+	background-color: rgba(255,255,255,.15);
+	padding: 10px;
+	outline: 2px solid white;
+    outline-offset: 5px;
+	position: absolute;
+	margin-left: 16%;
+	top: 50%;
+  	transform: translateY(-50%);
+	z-index: 3;
 }
 
 #one {
@@ -60,13 +83,9 @@ html, body {
 #three {
 
 }
-.project {
-	height: 100%;
-}
-.project img {
-	/*position: relative;
-  	top: 50%;
-  	transform: translateY(-50%);*/
-	width: 100%;
-	margin: 0, auto;
+
+#box {
+	width: 50px;
+	height: 50px;
+	background-color: red;
 }

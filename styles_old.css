@@ -1,0 +1,72 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+.underlay {
+	height: 100%;
+	width: 100%;
+	background-color: black;
+}
+
+.project-display {
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+}
+.transition {
+	-webkit-transform: scale(1,1.1); 
+    -moz-transform: scale(1,1.1);
+    -o-transform: scale(1,1.1);
+    transform: scale(1,1.1);
+}
+
+.project {
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+}
+.inverse-transition {
+	-webkit-transform: scale(1,.90909091); 
+    -moz-transform: scale(1,.90909091);
+    -o-transform: scale(1,.90909091);
+    transform: scale(1,.90909091);
+}
+
+.project-display {
+	position: relative;
+	height: 32.77777778%;
+	min-height: 300px;
+	width: 100%;
+	opacity: .5;
+	z-index: 0;
+	overflow: hidden;
+}
+
+#one {
+
+}
+#two {
+
+}
+#three {
+
+}
+.project {
+	height: 100%;
+}
+.project img {
+	/*position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);*/
+	width: 100%;
+	margin: 0, auto;
+}
