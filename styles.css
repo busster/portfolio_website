@@ -2,10 +2,21 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: 'Exo', sans-serif;
 }
 
 html, body {
 	height: 100%;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.navbar {
+	background-color: black;
+	padding: 5px;
 	width: 100%;
 }
 
@@ -39,7 +50,7 @@ html, body {
 
 .project-display {
 	position: relative;
-	height: 33.33333333%;
+	height: 32.33333333%;
 	min-height: 300px;
 	width: 100%;
 	opacity: .5;
@@ -61,17 +72,34 @@ html, body {
 }
 
 .button {
+	margin: auto;
+	text-align: center;
+	height: 250px;
+	width: 250px;
 	opacity: .25;
 	transform: perspective(500px) scale(.25);
-	font-size: 1.5em;
-	background-color: rgba(255,255,255,.5);
-	padding: 10px;
-	position: absolute;
-	margin-left: 5%;
+	border: 2px solid rgba(255,255,255,.75);
+	background-color: rgba(255,255,255,0);
+	padding-top: 105px;
+	position: relative;
 	top: 50%;
   	transform: translateY(-50%);
   	border-radius: 50%;
 	z-index: 3;
+}
+.button a {
+	font-size: 1.5em;
+	letter-spacing: 2px;
+	color: white;
+}
+
+
+.button:hover {
+	-webkit-transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	-ms-transition: all .25s ease-in-out;
+	background-color: rgba(255,255,255,.15);
 }
 
 #one {

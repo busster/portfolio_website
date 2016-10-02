@@ -13,12 +13,12 @@ $(document).ready(function(){
     });
   });
 
-$(document).ready(function(){
-    $('.button').hover(function() {
-        $(this).css({"outline": "2px solid rgba(255,255,255,.5)", "outline-offset": "5px"});
-    },
-    function() {
-        $(this).css({"outline": "0px solid white", "outline-offset": "0px"});
-    });
-  });
+// $(document).ready(function(){
+//     $('.button').hover(function() {
+//         $(this).css({"outline": "2px solid rgba(255,255,255,.5)", "outline-offset": "5px"});
+//     },
+//     function() {
+//         $(this).css({"outline": "0px solid white", "outline-offset": "0px"});
+//     });
+//   });
 
